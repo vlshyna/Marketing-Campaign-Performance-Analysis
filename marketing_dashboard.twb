@@ -1,0 +1,1681 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <_.fcp.DashboardRoundedCorners.true...DashboardRoundedCorners />
+    <Extensions />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VizExtensions.true...VizExtensions />
+    <_.fcp.VizExtensionsDupEncodingUUID.true...VizExtensionsDupEncodingUUID />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='test' inline='true' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='test' name='textscan.0icnygn0uvx4zg130d3cu0pris6z'>
+            <connection class='textscan' directory='C:/Users/Vladimir/Desktop' filename='test.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0icnygn0uvx4zg130d3cu0pris6z' name='test.csv' table='[test#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='uk_UA' separator=','>
+            <column datatype='integer' name='campaign_id' ordinal='0' />
+            <column datatype='string' name='campaign_name' ordinal='1' />
+            <column datatype='integer' name='installs' ordinal='2' />
+            <column datatype='real' name='spend' ordinal='3' />
+            <column datatype='real' name='revenue_t3' ordinal='4' />
+            <column datatype='real' name='revenue_t4' ordinal='5' />
+            <column datatype='real' name='total_revenue' ordinal='6' />
+            <column datatype='real' name='profit' ordinal='7' />
+            <column datatype='real' name='roas' ordinal='8' />
+            <column datatype='string' name='profit_status' ordinal='9' />
+            <column datatype='string' name='roas_benchmark' ordinal='10' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;uk&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₴&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='exponent-char'>&quot;е&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;uk_UA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot; &quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[campaign_id]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>campaign_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>campaign_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[campaign_name]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>campaign_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>installs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[installs]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>installs</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[spend]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>spend</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_t3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_t3]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>revenue_t3</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revenue_t4</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revenue_t4]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>revenue_t4</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[total_revenue]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>total_revenue</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[profit]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>profit</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>roas</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[roas]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>roas</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>profit_status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[profit_status]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>profit_status</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>roas_benchmark</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[roas_benchmark]</local-name>
+            <parent-name>[test.csv]</parent-name>
+            <remote-alias>roas_benchmark</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LUK_RUA' />
+            <object-id>[test.csv_4509B3D9DB8C43069C299A517F7C7C97]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Campaigns' datatype='integer' name='[Calculation_0596251468636160]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97])' />
+      </column>
+      <column caption='date' datatype='integer' name='[Calculation_0596251486306311]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='date2' datatype='string' name='[Calculation_0596251495714824]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if 0=0 then &quot;jun - jul 2026&quot; end' />
+      </column>
+      <column caption='test.csv' datatype='table' name='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' role='measure' type='quantitative' />
+      <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+          <alias key='&quot;profitable&quot;' value='Profitable' />
+          <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+        </aliases>
+      </column>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Ukraine&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='test.csv' id='test.csv_4509B3D9DB8C43069C299A517F7C7C97'>
+            <properties context=''>
+              <relation connection='textscan.0icnygn0uvx4zg130d3cu0pris6z' name='test.csv' table='[test#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='uk_UA' separator=','>
+                  <column datatype='integer' name='campaign_id' ordinal='0' />
+                  <column datatype='string' name='campaign_name' ordinal='1' />
+                  <column datatype='integer' name='installs' ordinal='2' />
+                  <column datatype='real' name='spend' ordinal='3' />
+                  <column datatype='real' name='revenue_t3' ordinal='4' />
+                  <column datatype='real' name='revenue_t4' ordinal='5' />
+                  <column datatype='real' name='total_revenue' ordinal='6' />
+                  <column datatype='real' name='profit' ordinal='7' />
+                  <column datatype='real' name='roas' ordinal='8' />
+                  <column datatype='string' name='profit_status' ordinal='9' />
+                  <column datatype='string' name='roas_benchmark' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='all camp'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>jun - july 2026</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xx36910sn9nwz1djwyoz0qqrbt2'>
+            <column caption='Campaigns' datatype='integer' name='[Calculation_0596251468636160]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97])' />
+            </column>
+            <column-instance column='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:qk]' pivot='key' type='quantitative' />
+            <column caption='test.csv' datatype='table' name='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' role='measure' type='quantitative' />
+            <column-instance column='[profit_status]' derivation='None' name='[none:profit_status:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+                <alias key='&quot;profitable&quot;' value='Profitable' />
+                <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_0596251468636160]' derivation='User' name='[usr:Calculation_0596251468636160:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;not enough data to calculate&quot;' />
+              <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;profitable&quot;' />
+              <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;unprofitable&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width-header' value='88' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.tableau.extension.radial' extension-url='https://tableau-extensions.tableauusercontent.com/radial/radial.html' extension-version='1.0.0' instance-id='D9C3412C0B0B47B7B0E1ABBFD69EC2E4'>
+              <instance-settings>
+                <setting key='angle-padding' value='7' />
+                <setting key='center-label-font' value='{&quot;size&quot;:&quot;14pt&quot;,&quot;color&quot;:&quot;#000000&quot;,&quot;family&quot;:&quot;Arial&quot;,&quot;isBold&quot;:true,&quot;isItalic&quot;:false,&quot;isUnderlined&quot;:false}' />
+                <setting key='center-size' value='78' />
+                <setting key='color-map' value='{&quot;profit_status&quot;:[[&quot;not enough data to calculate&quot;,&quot;#bab0ac&quot;],[&quot;profitable&quot;,&quot;rgb(36, 105, 61)&quot;],[&quot;unprofitable&quot;,&quot;#e15759&quot;]]}' />
+                <setting key='radius-padding' value='50' />
+                <setting key='show-segment-labels' value='false' />
+                <setting key='starting-angle' value='0' />
+              </instance-settings>
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{A984890A-BDD1-460F-8FE3-A119317DAC7A}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{A984890A-BDD1-460F-8FE3-A119317DAC7A}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' custom-type-name='level' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{68875247-FCE6-4483-8756-74CCBAB671C3}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{68875247-FCE6-4483-8756-74CCBAB671C3}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:qk]' custom-type-name='angle' />
+              <_.fcp.VizExtensions.false...lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{7505ED8F-D49D-4135-9F48-104A41512EA6}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[usr:Calculation_0596251468636160:qk]' />
+              <_.fcp.VizExtensions.true...custom _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{7505ED8F-D49D-4135-9F48-104A41512EA6}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[usr:Calculation_0596251468636160:qk]' custom-type-name='center' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D42A0B34-A3BA-4079-B5BB-D88FE42695E1}' />
+    </worksheet>
+    <worksheet name='filter text'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#ffffff' fontname='Arial' fontsize='10'>FILTER THE TABLE BY CAMPAIGN STATUS</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#08421d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{39F7A348-D5EE-447E-99B6-B07601941800}' />
+    </worksheet>
+    <worksheet name='no data'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xx36910sn9nwz1djwyoz0qqrbt2'>
+            <column-instance column='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]' pivot='key' type='ordinal' />
+            <column caption='test.csv' datatype='table' name='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' role='measure' type='quantitative' />
+            <column-instance column='[profit_status]' derivation='None' name='[none:profit_status:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+                <alias key='&quot;profitable&quot;' value='Profitable' />
+                <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]'>
+            <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;not enough data to calculate&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;profitable&quot;</bucket>
+              <bucket>&quot;unprofitable&quot;</bucket>
+              <bucket>&quot;not enough data to calculate&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='171' />
+            <format attr='font-size' data-class='total' value='72' />
+            <format attr='font-size' data-class='subtotal' value='36' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='15' />
+            <format attr='font-size' data-class='total' scope='cols' value='48' />
+            <format attr='font-style' data-class='subtotal' scope='cols' value='normal' />
+            <format attr='text-decoration' data-class='subtotal' scope='cols' value='underline' />
+            <format attr='color' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='#606b76' />
+            <format attr='color' value='#818b91' />
+            <format attr='font-family' value='Arial' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='68' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='font-size' data-class='total' scope='cols' value='14' />
+            <format attr='font-weight' data-class='subtotal' scope='cols' value='bold' />
+            <format attr='font-weight' data-class='total' scope='cols' value='bold' />
+            <format attr='background-color' scope='cols' value='#898989' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='14' />
+            <format attr='font-family' scope='cols' value='Arial' />
+            <format attr='color' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='#ffffff' />
+            <format attr='color' value='#000000' />
+            <format attr='color' scope='cols' value='#000000' />
+            <format attr='font-weight' scope='cols' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='36' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#d3b3484b' />
+            <format attr='line-pattern-only' value='dashed' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='24' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#59a14f67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</cols>
+      </table>
+      <simple-id uuid='{F09223E3-7F98-468C-957F-C49E6F50E92F}' />
+    </worksheet>
+    <worksheet name='profit table'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>ROAS &gt; 8: Excelent result</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xx36910sn9nwz1djwyoz0qqrbt2'>
+            <column datatype='integer' name='[campaign_id]' role='measure' type='quantitative' />
+            <column datatype='string' name='[campaign_name]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[installs]' role='measure' type='quantitative' />
+            <column-instance column='[campaign_id]' derivation='None' name='[none:campaign_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[campaign_name]' derivation='None' name='[none:campaign_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[profit_status]' derivation='None' name='[none:profit_status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[roas_benchmark]' derivation='None' name='[none:roas_benchmark:nk]' pivot='key' type='nominal' />
+            <column datatype='real' name='[profit]' role='measure' type='quantitative' />
+            <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+                <alias key='&quot;profitable&quot;' value='Profitable' />
+                <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+              </aliases>
+            </column>
+            <column datatype='real' name='[roas]' role='measure' type='quantitative' />
+            <column datatype='string' name='[roas_benchmark]' role='dimension' type='nominal' />
+            <column datatype='real' name='[spend]' role='measure' type='quantitative' />
+            <column-instance column='[installs]' derivation='Sum' name='[sum:installs:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[profit]' derivation='Sum' name='[sum:profit:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[roas]' derivation='Sum' name='[sum:roas:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[spend]' derivation='Sum' name='[sum:spend:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_revenue]' derivation='Sum' name='[sum:total_revenue:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[total_revenue]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;profitable&quot;' />
+              <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;unprofitable&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]' value='normal' />
+            <format attr='font-style' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]' value='normal' />
+            <format attr='color' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]' value='#000000' />
+            <format attr='text-format' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]' value='C4105%' />
+            <format attr='text-format' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:total_revenue:qk]' value='C4105%' />
+            <format attr='text-format' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:roas:qk]' value='n#,##0.0;-#,##0.0' />
+            <format attr='text-format' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:profit:qk]' value='c&quot;$&quot;#,##0.00;-&quot;$&quot;#,##0.00' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]' value='c&quot;$&quot;#,##0,.00K;-&quot;$&quot;#,##0,.00K' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='title' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='column: profit status'>
+              <formatted-text>
+                <run>column: profit status</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <_.fcp.VizExtensions.false...mark class='Automatic' />
+            <_.fcp.VizExtensions.true...mark class='VizExtension' />
+            <_.fcp.VizExtensions.true...add-in add-in-id='com.tableau.extension.table' extension-url='https://tableau-extensions.tableauusercontent.com/table/table.html' extension-version='1.0.0' instance-id='51FC03E77B2845F18851101A399ACE50'>
+              <instance-settings>
+                <setting key='column-setting-EncodingId:{06F8966A-4FE8-4CDF-857D-1C3287BE8242}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:roas_benchmark:nk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;8&quot;,&quot;column-width&quot;:&quot;216&quot;,&quot;data-highlighter&quot;:&quot;{\n  \&quot;rules\&quot;: [\n    {\n      \&quot;condition\&quot;: \&quot;containing\&quot;,\n      \&quot;params\&quot;: {\n        \&quot;valueType\&quot;: \&quot;RegExp\&quot;,\n        \&quot;valueInputString\&quot;: \&quot;ex\&quot;,\n        \&quot;value\&quot;: {}\n      },\n      \&quot;formatting\&quot;: {}\n    }\n  ]\n}&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#08421d\&quot;\n}&quot;,&quot;column-header&quot;:&quot;ROAS Status&quot;,&quot;column-sorting&quot;:&quot;false&quot;}' />
+                <setting key='column-setting-EncodingId:{0BA482AE-4232-49CD-9775-FEC0756836A8}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:campaign_name:nk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;1&quot;,&quot;column-width&quot;:&quot;156&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#08421d\&quot;\n}&quot;,&quot;column-header&quot;:&quot;Campaign Name&quot;}' />
+                <setting key='column-setting-EncodingId:{5DE9743A-E88F-4747-B38E-973DFEE85828}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:profit:qk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;5&quot;,&quot;column-width&quot;:&quot;77&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#00483c\&quot;\n}&quot;,&quot;column-header&quot;:&quot;Profit&quot;}' />
+                <setting key='column-setting-EncodingId:{78C7B6AC-2567-44BF-9E30-57230E3DB166}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;3&quot;,&quot;column-width&quot;:&quot;76&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#00483c\&quot;\n}&quot;,&quot;column-header&quot;:&quot;Costs&quot;}' />
+                <setting key='column-setting-EncodingId:{7DF9DC02-E155-479D-8A6B-DB9BBD5A8C71}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:total_revenue:qk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;4&quot;,&quot;column-width&quot;:&quot;96.6875&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#00483c\&quot;\n}&quot;,&quot;column-header&quot;:&quot;Total Revenue&quot;}' />
+                <setting key='column-setting-EncodingId:{8F5D457E-3D02-4145-8B0E-5A6FE9F25930}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:roas:qk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;7&quot;,&quot;column-width&quot;:&quot;82&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#08421d\&quot;\n}&quot;,&quot;column-header&quot;:&quot;ROAS&quot;}' />
+                <setting key='column-setting-EncodingId:{CC464176-CA41-4AA8-9A10-158961E09857}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:campaign_id:qk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;0&quot;,&quot;column-width&quot;:&quot;83.625&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#08421d\&quot;\n}&quot;,&quot;column-header&quot;:&quot;ID&quot;}' />
+                <setting key='column-setting-EncodingId:{E07DBA75-5607-4AA3-B874-09792A1D5161}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;6&quot;,&quot;column-width&quot;:&quot;84.515625&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#08421d\&quot;\n}&quot;,&quot;data-highlighter&quot;:&quot;{\n  \&quot;rules\&quot;: [\n    {\n      \&quot;condition\&quot;: \&quot;not-containing\&quot;,\n      \&quot;params\&quot;: {\n        \&quot;valueInputString\&quot;: \&quot;n\&quot;,\n        \&quot;valueType\&quot;: \&quot;RegExp\&quot;\n      },\n      \&quot;formatting\&quot;: {\n        \&quot;backgroundColor\&quot;: \&quot;#8cd17d\&quot;\n      }\n    },\n    {\n      \&quot;condition\&quot;: \&quot;containing\&quot;,\n      \&quot;params\&quot;: {\n        \&quot;valueType\&quot;: \&quot;RegExp\&quot;,\n        \&quot;valueInputString\&quot;: \&quot;Unprofitable\&quot;,\n        \&quot;value\&quot;: {}\n      },\n      \&quot;formatting\&quot;: {\n        \&quot;backgroundColor\&quot;: \&quot;#f17b79\&quot;\n      }\n    }\n  ]\n}&quot;,&quot;column-header&quot;:&quot;Status&quot;}' />
+                <setting key='column-setting-EncodingId:{EB162C52-5FAE-4A55-8DC4-48E302E11032}-Encoding:detail' value='{&quot;field-id&quot;:&quot;[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:installs:qk]&quot;,&quot;encoding-type&quot;:&quot;detail&quot;,&quot;column-index&quot;:&quot;2&quot;,&quot;column-width&quot;:&quot;60&quot;,&quot;header-formatting&quot;:&quot;{\n  \&quot;backgroundColor\&quot;: \&quot;#08421d\&quot;\n}&quot;,&quot;column-header&quot;:&quot;Installs&quot;}' />
+                <setting key='dialog-status' value='none-open' />
+                <setting key='setting-key-version' value='V2' />
+                <setting key='table-settings' value='{&quot;showToolbar&quot;:true,&quot;showFilters&quot;:false,&quot;includeNullsForRangeFilters&quot;:false,&quot;columnFilterType&quot;:&quot;contains&quot;,&quot;showSearch&quot;:true,&quot;showTooltips&quot;:false,&quot;showExcelDownload&quot;:false,&quot;allowColumnReorder&quot;:true,&quot;showColumnReorderControls&quot;:true,&quot;showShowFields&quot;:true,&quot;stringNullText&quot;:&quot;Null&quot;,&quot;numberNullText&quot;:&quot;Null&quot;,&quot;dateNullText&quot;:&quot;Null&quot;,&quot;showTotals&quot;:false,&quot;useTableFontForTotals&quot;:true,&quot;totalsRowLocation&quot;:&quot;top&quot;,&quot;totalsFormatting&quot;:{&quot;font&quot;:{&quot;isBold&quot;:true,&quot;color&quot;:&quot;#333333&quot;}}}' />
+              </instance-settings>
+              <type-settings>
+                <worksheet />
+              </type-settings>
+            </_.fcp.VizExtensions.true...add-in>
+            <encodings>
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{CC464176-CA41-4AA8-9A10-158961E09857}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:campaign_id:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{0BA482AE-4232-49CD-9775-FEC0756836A8}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:campaign_name:nk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{EB162C52-5FAE-4A55-8DC4-48E302E11032}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:installs:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{78C7B6AC-2567-44BF-9E30-57230E3DB166}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:spend:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{7DF9DC02-E155-479D-8A6B-DB9BBD5A8C71}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:total_revenue:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{5DE9743A-E88F-4747-B38E-973DFEE85828}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:profit:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{E07DBA75-5607-4AA3-B874-09792A1D5161}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{8F5D457E-3D02-4145-8B0E-5A6FE9F25930}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[sum:roas:qk]' />
+              <lod _.fcp.VizExtensionsDupEncodingUUID.true...encoding-id='{06F8966A-4FE8-4CDF-857D-1C3287BE8242}' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:roas_benchmark:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{281CBBDF-CB40-4A2D-8492-0241D5A4CC66}' />
+    </worksheet>
+    <worksheet name='profitable count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xx36910sn9nwz1djwyoz0qqrbt2'>
+            <column-instance column='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]' pivot='key' type='ordinal' />
+            <column caption='test.csv' datatype='table' name='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' role='measure' type='quantitative' />
+            <column-instance column='[profit_status]' derivation='None' name='[none:profit_status:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+                <alias key='&quot;profitable&quot;' value='Profitable' />
+                <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]'>
+            <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;profitable&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;profitable&quot;</bucket>
+              <bucket>&quot;unprofitable&quot;</bucket>
+              <bucket>&quot;not enough data to calculate&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='171' />
+            <format attr='font-size' data-class='total' value='72' />
+            <format attr='font-size' data-class='subtotal' value='36' />
+            <format attr='font-size' data-class='total' scope='cols' value='48' />
+            <format attr='text-decoration' data-class='subtotal' scope='cols' value='underline' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='48' />
+            <format attr='font-family' value='Arial' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-style' value='normal' />
+            <format attr='color' value='#08421d' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='68' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='font-size' data-class='total' scope='cols' value='14' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='72' />
+            <format attr='background-color' scope='cols' value='#08421d' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='14' />
+            <format attr='color' scope='cols' value='#ffffff' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-family' scope='cols' value='Arial' />
+            <format attr='color' scope='rows' value='#549f99' />
+            <format attr='font-size' scope='rows' value='48' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='36' />
+            <format attr='color' value='#7ed4ac' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#d3b3484b' />
+            <format attr='line-pattern-only' value='dashed' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='24' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Text' />
+            <encodings>
+              <text column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#59a14f67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</cols>
+      </table>
+      <simple-id uuid='{7AD865D0-10FB-4B70-BD58-AC693DE85614}' />
+    </worksheet>
+    <worksheet name='title'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Bahnschrift SemiBold' fontsize='26'>WHICH CAMPAIGNS PAID OF?</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='12'>Period of Time:</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Arial' fontsize='12'>Æ </run>
+            <run fontalignment='1' fontcolor='#a6f0a2' fontname='Arial' fontsize='12'>Jun - July 2026</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#08421d' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9F9208BD-4437-4E98-B4F2-352D241AC891}' />
+    </worksheet>
+    <worksheet name='unprofitable count'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='test' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1xx36910sn9nwz1djwyoz0qqrbt2'>
+            <column-instance column='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]' pivot='key' type='ordinal' />
+            <column caption='test.csv' datatype='table' name='[__tableau_internal_object_id__].[test.csv_4509B3D9DB8C43069C299A517F7C7C97]' role='measure' type='quantitative' />
+            <column-instance column='[profit_status]' derivation='None' name='[none:profit_status:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+                <alias key='&quot;profitable&quot;' value='Profitable' />
+                <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+              </aliases>
+            </column>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]'>
+            <groupfilter function='member' level='[none:profit_status:nk]' member='&quot;unprofitable&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;profitable&quot;</bucket>
+              <bucket>&quot;unprofitable&quot;</bucket>
+              <bucket>&quot;not enough data to calculate&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='171' />
+            <format attr='font-size' data-class='total' value='72' />
+            <format attr='font-size' data-class='subtotal' value='36' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='15' />
+            <format attr='font-size' data-class='total' scope='cols' value='48' />
+            <format attr='font-style' data-class='subtotal' scope='cols' value='normal' />
+            <format attr='text-decoration' data-class='subtotal' scope='cols' value='underline' />
+            <format attr='color' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='#e15759' />
+            <format attr='color' value='#e15759' />
+            <format attr='font-family' value='Arial' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='68' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='font-size' data-class='total' scope='cols' value='14' />
+            <format attr='background-color' scope='cols' value='#b64c4e' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' scope='cols' value='14' />
+            <format attr='font-weight' scope='cols' value='bold' />
+            <format attr='font-family' scope='cols' value='Arial' />
+            <format attr='color' field='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' value='#ffffff' />
+            <format attr='color' value='#000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' scope='rows' value='0' />
+            <format attr='border-style' data-class='subtotal' scope='rows' value='none' />
+            <format attr='background-color' data-class='subtotal' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#f5eddc' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-size' value='36' />
+            <format attr='color' value='#549f99' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' value='#d3b3484b' />
+            <format attr='line-pattern-only' value='dashed' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='div-level' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-size' value='24' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='color' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-color' value='#59a14f67' />
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</cols>
+      </table>
+      <simple-id uuid='{BD32BDD8-4A44-4689-9597-69B410DE38FD}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='test' name='federated.1xx36910sn9nwz1djwyoz0qqrbt2' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1xx36910sn9nwz1djwyoz0qqrbt2'>
+        <column-instance column='[profit_status]' derivation='None' name='[none:profit_status:nk]' pivot='key' type='nominal' />
+        <column datatype='string' name='[profit_status]' role='dimension' type='nominal'>
+          <aliases>
+            <alias key='&quot;not enough data to calculate&quot;' value='Not Enough Data' />
+            <alias key='&quot;profitable&quot;' value='Profitable' />
+            <alias key='&quot;unprofitable&quot;' value='Unprofitable' />
+          </aliases>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88375' id='13' param='horz' type-v2='layout-flow' w='98400' x='800' y='10625'>
+            <zone h='88375' id='11' type-v2='layout-basic' w='98400' x='800' y='10625'>
+              <zone h='24630' id='4' name='profitable count' show-title='false' w='19142' x='20558' y='10625'>
+                <zone-style>
+                  <format attr='border-color' value='#08421d' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='10' />
+                  <format attr='margin' value='2' />
+                  <format attr='margin-top' value='15' />
+                  <format attr='margin-right' value='15' />
+                  <format attr='margin-bottom' value='15' />
+                  <format attr='margin-left' value='15' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone h='63745' id='5' name='profit table' show-title='false' w='98400' x='800' y='35255'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='10' />
+                  <format attr='margin' value='2' />
+                  <format attr='margin-right' value='15' />
+                </zone-style>
+              </zone>
+              <zone h='24630' id='6' name='unprofitable count' show-title='false' w='19900' x='39700' y='10625'>
+                <zone-style>
+                  <format attr='border-color' value='#b64c4e' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='10' />
+                  <format attr='margin' value='15' />
+                </zone-style>
+              </zone>
+              <zone h='24630' id='9' name='no data' show-title='false' w='20987' x='59600' y='10625'>
+                <zone-style>
+                  <format attr='border-color' value='#898989' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='2' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='10' />
+                  <format attr='margin' value='15' />
+                </zone-style>
+              </zone>
+              <zone h='24630' id='3' name='all camp' show-title='false' w='19758' x='800' y='10625'>
+                <layout-cache fixed-size-h='184' fixed-size-w='152' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#d4d4d4' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='100' />
+                  <format attr='margin' value='11' />
+                  <format attr='padding' value='0' />
+                  <format attr='background-color' value='#ffffff' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='160' h='24630' id='12' is-fixed='true' param='vert' type-v2='layout-flow' w='18613' x='80587' y='10625'>
+                <zone h='7130' id='15' name='filter text' w='18613' x='80587' y='10625'>
+                  <layout-cache type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#08421d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius-top-left' value='8' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius-top-right' value='8' />
+                    <format attr='margin' value='4' />
+                    <format attr='margin-top' value='14' />
+                    <format attr='margin-right' value='15' />
+                    <format attr='margin-bottom' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='123' h='17500' id='14' is-fixed='true' name='profit table' param='[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]' type-v2='filter' values='database' w='18613' x='80587' y='17755'>
+                  <zone-style>
+                    <format attr='border-color' value='#08421d' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='2' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius-bottom-left' value='7' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius-bottom-right' value='7' />
+                    <format attr='margin' value='4' />
+                    <format attr='margin-top' value='0' />
+                    <format attr='margin-right' value='15' />
+                    <format attr='margin-bottom' value='17' />
+                    <format attr='padding' value='7' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9625' id='8' name='title' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='0' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='7' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f3f4f2' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{082C29F4-5E93-4F2E-97E0-3307676EDBB7}' />
+    </dashboard>
+  </dashboards>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='all camp' />
+        <viewpoint name='filter text'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='no data'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='profit table' />
+        <viewpoint name='profitable count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='title'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='unprofitable count'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='14' />
+      <simple-id uuid='{BB9AB2CB-390C-468F-8FE4-C26CD55CB623}' />
+    </window>
+    <window class='worksheet' name='all camp'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0F13C831-C87A-4737-8C88-CE81B73C0DF2}' />
+    </window>
+    <window class='worksheet' name='profitable count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+                  </x-fields>
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[__tableau_internal_object_id__].[cnt:test.csv_4509B3D9DB8C43069C299A517F7C7C97:ok]</field>
+                  <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>32</value>
+                <value>&quot;profitable&quot;</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9F278EFA-AC07-4119-B22F-EFA3C0FB538C}' />
+    </window>
+    <window class='worksheet' name='unprofitable count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B8CFCC46-36B4-49CB-A9C5-555BB9388086}' />
+    </window>
+    <window class='worksheet' name='no data'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6E98DB00-E674-4EDC-9A79-02A34504AB31}' />
+    </window>
+    <window class='worksheet' name='profit table'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:campaign_id:qk]</field>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:campaign_name:nk]</field>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:profit_status:nk]</field>
+            <field>[federated.1xx36910sn9nwz1djwyoz0qqrbt2].[none:roas_benchmark:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{FE265F36-4136-42AB-86E3-041B3E4A63EE}' />
+    </window>
+    <window class='worksheet' name='title'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{68A9D2CE-E4DF-429B-8455-14CF84F8ECDE}' />
+    </window>
+    <window class='worksheet' name='filter text'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8007C993-609B-44C1-8330-C5CCAF3E9526}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='all camp' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='filter text' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='no data' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACQ0lEQVR4nO3WoRGEQBBFQbi6/PMiBgxqPRHsJXDYRbxuO+abVzX7nHNuEPV5ewC8SQCk
+      CYA0AZAmANK+T4fjOLYxxsotsNxjAGOM7TzPlVtgOS8QaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYC0fc45/x2u69ru+169B5Z6DAAKvECkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYC0H0PiHTnU+J3mAAAA
+      AElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='profit table' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='profitable count' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACWUlEQVR4nO3WIU6DQRRG0Slh++huAY3qAlBF1LUCElbQNJVVwwb47VTcc+wzn7nJ2805
+      54Col2cPgGcSAGkCIE0ApAmAtNetw9v7fnxdTiu3wHKbARwvp/HxeVi5BZbzApEmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASNvNOed/h/P3z7jebqv3wFKbAfze57g/Vs+BtbxApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmAtD+cpiBiCqoqdQAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='title' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='unprofitable count' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAACSUlEQVR4nO3WsQ3CQBBFQYPovxNoA1pwABIhmaGBowGcHsGbSTf5yZP2MMYYC0Qd/z0A
+      /kkApAmANAGQJgDSTnuHx/mybOs6cwtMtxvAtq7L63qbuQWm8wKRJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEg7jDHGr8Pz/lg+7232HphqNwAo8AKRJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0A
+      pAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSvu+oHNoq
+      jLXgAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+  <_.fcp.VizExtensions.true...referenced-extensions>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.tableau.extension.radial'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A radial chart displays data in a circular format in which the total of all segment values add up to 100%, representing the whole. This visualization type creates donut charts, sunbursts, and fan charts, which are powerful means to summarize simple part-to-whole insights at a high level.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://tableau-extensions.tableauusercontent.com/radial/radial.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+          <encoding id='level'>
+            <display-name resource-id='level-encoding'>Ring</display-name>
+            <role-spec>
+              <role-type>discrete-dimension</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='5' />
+            <encoding-icon token='level-radial' />
+            <tooltip resource-id='level-tooltip'>Radial Ring - Drag up to five dimensions here.</tooltip>
+          </encoding>
+          <encoding id='angle'>
+            <display-name resource-id='angle-encoding'>Angle</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='wedge' />
+            <tooltip resource-id='angle-tooltip'>Segment Angle - Drag a measure here.</tooltip>
+          </encoding>
+          <encoding id='center'>
+            <display-name resource-id='center-encoding'>Center</display-name>
+            <role-spec>
+              <role-type>continuous-measure</role-type>
+              <role-type>discrete-measure</role-type>
+            </role-spec>
+            <fields max-count='1' />
+            <encoding-icon token='exclamation' />
+            <tooltip resource-id='center-tooltip'>Center Label - Drag a measure here</tooltip>
+          </encoding>
+        </worksheet-extension>
+        <resources>
+          <resource id='angle-encoding'>
+            <text locale='de_DE'>Winkel</text>
+            <text locale='en_GB'>Angle</text>
+            <text locale='en_US'>Angle</text>
+            <text locale='es_ES'>Ángulo</text>
+            <text locale='fr_CA'>Angle</text>
+            <text locale='fr_FR'>Angle</text>
+            <text locale='it_IT'>Angolo</text>
+            <text locale='ja_JP'>角度</text>
+            <text locale='ko_KR'>각도</text>
+            <text locale='nl_NL'>Hoek</text>
+            <text locale='pt_BR'>Ângulo</text>
+            <text locale='sv_SE'>Vinkel</text>
+            <text locale='th_TH'>มุม</text>
+            <text locale='zh_CN'>角度</text>
+            <text locale='zh_TW'>角度</text>
+          </resource>
+          <resource id='angle-tooltip'>
+            <text locale='de_DE'>Segmentwinkel - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Segment Angle - Drag a measure here.</text>
+            <text locale='en_US'>Segment Angle - Drag a measure here.</text>
+            <text locale='es_ES'>Ángulo del segmento - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Angle du segment - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Angolo del segmento - Trascina la misura qui.</text>
+            <text locale='ja_JP'>セグメントの角度 - メジャーを使用.</text>
+            <text locale='ko_KR'>세그먼트 각도 - 측정값 사용.</text>
+            <text locale='nl_NL'>Segmenthoek - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Ângulo do segmento - Arraste a medida aqui.</text>
+            <text locale='sv_SE'>Segmentvinkel - Dra mått hit.</text>
+            <text locale='th_TH'>มุมของส่วน - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>分段角度 - 使用度量.</text>
+            <text locale='zh_TW'>分段角度 - 使用測量值.</text>
+          </resource>
+          <resource id='center-encoding'>
+            <text locale='de_DE'>Zentrum</text>
+            <text locale='en_GB'>Centre</text>
+            <text locale='en_US'>Center</text>
+            <text locale='es_ES'>Centro</text>
+            <text locale='fr_CA'>Centre</text>
+            <text locale='fr_FR'>Centre</text>
+            <text locale='it_IT'>Centro</text>
+            <text locale='ja_JP'>中心</text>
+            <text locale='ko_KR'>중심</text>
+            <text locale='nl_NL'>Centrum</text>
+            <text locale='pt_BR'>Centro</text>
+            <text locale='sv_SE'>Centrum</text>
+            <text locale='th_TH'>ศูนย์กลาง</text>
+            <text locale='zh_CN'>中心</text>
+            <text locale='zh_TW'>中心</text>
+          </resource>
+          <resource id='center-tooltip'>
+            <text locale='de_DE'>Text zentrieren - Kennzahl hierher ziehen.</text>
+            <text locale='en_GB'>Centre Label - Drag a measure here.</text>
+            <text locale='en_US'>Center Label - Drag a measure here.</text>
+            <text locale='es_ES'>Texto central - Arrastre la medida aquí.</text>
+            <text locale='fr_CA'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='fr_FR'>Texte central - Faites glisser la mesure ici.</text>
+            <text locale='it_IT'>Testo centrale - Trascina la misura qui.</text>
+            <text locale='ja_JP'>中央のテキスト - メジャーを使用.</text>
+            <text locale='ko_KR'>중앙 텍스트 - 측정값 사용.</text>
+            <text locale='nl_NL'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='pt_BR'>Texto central - Arraste a medida aqui</text>
+            <text locale='sv_SE'>Tekst in het midden - Sleep meetwaarde hierheen.</text>
+            <text locale='th_TH'>ข้อความตรงกลาง - ใช้ค่าการวัด.</text>
+            <text locale='zh_CN'>中心文字 - 使用度量.</text>
+            <text locale='zh_TW'>中心文字 - 使用測量值.</text>
+          </resource>
+          <resource id='level-encoding'>
+            <text locale='de_DE'>Hierarchieebene</text>
+            <text locale='en_GB'>Ring</text>
+            <text locale='en_US'>Ring</text>
+            <text locale='es_ES'>Anillo</text>
+            <text locale='fr_CA'>Anneau</text>
+            <text locale='fr_FR'>Anneau</text>
+            <text locale='it_IT'>Anello</text>
+            <text locale='ja_JP'>階層レベル</text>
+            <text locale='ko_KR'>원</text>
+            <text locale='nl_NL'>Ring</text>
+            <text locale='pt_BR'>Anel</text>
+            <text locale='sv_SE'>nivå</text>
+            <text locale='th_TH'>วงแหวน</text>
+            <text locale='zh_CN'>环</text>
+            <text locale='zh_TW'>環</text>
+          </resource>
+          <resource id='level-tooltip'>
+            <text locale='de_DE'>Hierarchieebene - Ziehen Sie hier bis zu fünf Dimensionen.</text>
+            <text locale='en_GB'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='en_US'>Radial Ring - Drag up to five dimensions here.</text>
+            <text locale='es_ES'>Anillo - Arrastre aquí hasta cinco dimensiones.</text>
+            <text locale='fr_CA'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='fr_FR'>Anneau - Faites glisser jusqu&apos;à cinq dimensions ici.</text>
+            <text locale='it_IT'>Anello - Trascina qui fino a cinque dimensioni.</text>
+            <text locale='ja_JP'>階層レベル - 最大5つのディメンション.</text>
+            <text locale='ko_KR'>원 - 최대 5개의 디멘션.</text>
+            <text locale='nl_NL'>Ring - Sleep hier maximaal vijf dimensies naartoe.</text>
+            <text locale='pt_BR'>Anel - Arraste até cinco dimensões aqui.</text>
+            <text locale='sv_SE'>nivå - Dra upp till fem dimensioner här.</text>
+            <text locale='th_TH'>วงแหวน - &#9;มิติสูงสุดห้ามิติ.</text>
+            <text locale='zh_CN'>环 - 最多五个维度.</text>
+            <text locale='zh_TW'>環 - 最多五個維度.</text>
+          </resource>
+          <resource id='name'>
+            <text locale='en_US'>Radial</text>
+            <text locale='ja_JP'>サンバーストチャート</text>
+            <text locale='zh_CN'>旭日圖</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='all camp' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+    <_.fcp.VizExtensions.true...referenced-extension>
+      <manifest manifest-version='0.1'>
+        <worksheet-extension extension-version='1.0.0' id='com.tableau.extension.table'>
+          <default-locale>en_US</default-locale>
+          <name resource-id='name' />
+          <description>A rich table experience that allows you to build data tables directly in Tableau. Includes conditional formatting, search, and Viz in Cell functionality.</description>
+          <author email='github@tableau.com' name='Tableau' organization='Tableau' website='https://www.tableau.com/support' />
+          <min-api-version>1.12</min-api-version>
+          <source-location>
+            <url>https://tableau-extensions.tableauusercontent.com/table/table.html</url>
+          </source-location>
+          <icon />
+          <context-menu>
+            <configure-context-menu-item />
+          </context-menu>
+        </worksheet-extension>
+        <resources>
+          <resource id='name'>
+            <text locale='en_US'>Tableau Table</text>
+          </resource>
+        </resources>
+      </manifest>
+      <referenced-views>
+        <referenced-view instances='1' viewId='profit table' />
+      </referenced-views>
+    </_.fcp.VizExtensions.true...referenced-extension>
+  </_.fcp.VizExtensions.true...referenced-extensions>
+</workbook>
