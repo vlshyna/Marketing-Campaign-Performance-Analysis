@@ -39,10 +39,10 @@ The original data consisted of four separate tables covering **June–July 2026.
 
 |Source	| Description |
 | :--- | :--- |
-|installs	| Application installs attributed to advertising campaigns |
-| ad_spend	| Advertising costs by campaign |
-|ad_revenue	| Revenue generated from in-app advertising |
-|in_app_revenue	| Revenue from subscriptions, purchases, and related in-app events |
+|non_org_installs_report	| Application installs attributed to advertising campaigns |
+| cost_table	| Advertising costs by campaign |
+|ad_revenue_raw	| Revenue generated from in-app advertising |
+|in_app_events_report	| Revenue from subscriptions, purchases, and related in-app events |
 
 The data sources do not have a completely consistent campaign population, and some records contain missing campaign identifiers. These characteristics were taken into account during the data integration process. 
 
@@ -234,4 +234,4 @@ A Tableau dashboard was created on top of the final marketing mart. The dashboar
 - Which campaigns are unprofitable?
 - Which campaigns cannot be reliably evaluated because of missing cost data?
 
-
+![img](dashboard.jpg) 
