@@ -222,7 +222,7 @@ The resulting dataset contains:
 
 </br>
 
-## [SQL Query]()
+## [SQL Query](https://github.com/vlshyna/Marketing-Campaign-Performance-Analysis/blob/main/marketing_mart.sql)
 
 </br>
 
